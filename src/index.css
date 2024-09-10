@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  color: white !important;
+  background-color: #242424 !important; 
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.hero img{
+  filter:drop-shadow(0 0 5em rgba(128, 128, 128, 0.126))
+}
+
+.movie{
+  max-width: 19em;
+  height: 100%;
+  cursor: pointer;
+}
+.banner{
+  position: relative;
+  height: 30vh;
+
+}
+.banner-bg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.393);
+  font-size: 2em;
+  font-weight: bold;
+}
+.company{
+  color: black;
+  width: 6.5em;
+  text-align: center;
+  font-weight: bold;
+}
+.actor-card{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+
+}
+.actor-card img{
+  width:7rem;
+}
+
+.actor-card:hover >p{
+  display: grid;
+  transition: all 0.5s;
+}
+.actor-card p {
+position: absolute;
+width: 100%;
+height: 100%;
+text-align: center;
+display: none;
+place-items: center;
+background: rgba(0, 0, 0, 0.43);
+}
+
+::-webkit-scrollbar {
+  width: 8px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 0, 0, 0.5); 
+  border-radius: 4px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 0, 0, 0.8); 
+}
